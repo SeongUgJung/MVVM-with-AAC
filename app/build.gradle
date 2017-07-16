@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.nobrain.android.lottiefiles"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force support_annotation
+        }
+    }
+
+    packagingOptions.excludes = [
+            'META-INF/DEPENDENCIES',
+            'META-INF/LICENSE',
+            'META-INF/LICENSE.txt',
+            'LICENSE.txt',
+            'LICENSE',
+            'META-INF/license.txt',
+            'META-INF/NOTICE',
+            'NOTICE',
+            'asm-license.txt',
+            '.readme',
+            'META-INF/NOTICE.txt',
+            'META-INF/notice.txt',
+            'META-INF/ASL2.0',
+            'META-INF/maven/com.google.guava/guava/pom.properties',
+            'META-INF/maven/com.google.guava/guava/pom.xml'
+    ]
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile support_appcompat
+    compile support_recyclerview
+    compile support_constrainlayout
+    compile kotlin_stdlib
+
+
+    compile retrofit
+    compile retrofit_adapter_rxjava2
+    compile okhttp_logging
+    compile jsoup
+
+    compile gson
+
+    compile rxjava2
+    compile rxjava2_android
+
+    kapt dagger_compiler
+    provided javax_annotation
+
+    compile dagger
+    compile stetho_okhttp
+
+    compile lottie
+    compile picasso
+
+    compile architect_reactivestream
+    compile architect_lifecycle
+    compile architect_lifecycle_ext
+    kapt architect_lifecycle_compiler
+    compile architect_room_rxjava2
+
+    compile architect_room
+    kapt architect_room_compiler
+
+    kapt databinding_compiler
+
+    testCompile junit
+    testCompile assertj
+    testCompile awaitility
+    testCompile mockito_inline
+
+    kaptTest dagger_compiler
+
+    androidTestCompile espresso
+}

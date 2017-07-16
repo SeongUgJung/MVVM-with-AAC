@@ -1,0 +1,68 @@
+ext {
+
+    ver_android_support = "25.3.1"
+    ver_espresso = "2.2.2"
+    ver_retrofit = "2.2.0"
+    ver_dagger2 = "2.10"
+    ver_butterknife = "8.5.1"
+    ver_stetho = "1.4.2"
+    ver_kotlin = '1.1.3'
+    ver_stag = '2.0.2'
+    ver_autovalue = "1.3"
+    ver_autovalue_gson = "0.4.6"
+    ver_jackson = "2.8.7"
+    ver_logan = "1.3.6"
+    ver_architect = "1.0.0-alpha4"
+    ver_android_build_tool = "2.3.3"
+    ver_mockito = "2.8.9"
+
+    kotlin_classpath = "org.jetbrains.kotlin:kotlin-gradle-plugin:$ver_kotlin"
+    kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jre7:$ver_kotlin"
+    kotlin_junit = "org.jetbrains.kotlin:kotlin-test-junit:$ver_kotlin"
+
+    support_appcompat = "com.android.support:appcompat-v7:$ver_android_support"
+    support_recyclerview = "com.android.support:recyclerview-v7:$ver_android_support"
+    support_constrainlayout = 'com.android.support.constraint:constraint-layout:1.0.1'
+    support_annotation = "com.android.support:support-annotations:$ver_android_support"
+    architect_reactivestream = "android.arch.lifecycle:reactivestreams:$ver_architect"
+    architect_lifecycle = "android.arch.lifecycle:runtime:$ver_architect"
+    architect_lifecycle_ext = "android.arch.lifecycle:extensions:$ver_architect"
+    architect_lifecycle_compiler = "android.arch.lifecycle:compiler:$ver_architect"
+    architect_room = "android.arch.persistence.room:runtime:$ver_architect"
+    architect_room_rxjava2 = "android.arch.persistence.room:rxjava2:$ver_architect"
+    architect_room_compiler = "android.arch.persistence.room:compiler:$ver_architect"
+    databinding_compiler = "com.android.databinding:compiler:$ver_android_build_tool"
+
+
+    retrofit = "com.squareup.retrofit2:retrofit:$ver_retrofit"
+    retrofit_convert_gson = "com.squareup.retrofit2:converter-gson:$ver_retrofit"
+    retrofit_adapter_rxjava2 = "com.squareup.retrofit2:adapter-rxjava2:$ver_retrofit"
+    okhttp_logging = "com.squareup.okhttp3:logging-interceptor:3.6.0"
+    gson = "com.google.code.gson:gson:2.8.0"
+
+    dagger = "com.google.dagger:dagger:$ver_dagger2"
+    dagger_compiler = "com.google.dagger:dagger-compiler:$ver_dagger2"
+    javax_annotation = 'javax.annotation:jsr250-api:1.0'
+
+    rxjava2 = 'io.reactivex.rxjava2:rxjava:2.1.1'
+    rxjava2_android = 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    junit = 'junit:junit:4.12'
+    assertj = 'org.assertj:assertj-core:1.7.+'
+
+    stetho = "com.facebook.stetho:stetho:$ver_stetho"
+    stetho_okhttp = "com.facebook.stetho:stetho-okhttp3:$ver_stetho"
+
+    stag_lib = "com.vimeo.stag:stag-library:$ver_stag"
+    stag_compiler = "com.vimeo.stag:stag-library-compiler:$ver_stag"
+
+    jsoup = 'org.jsoup:jsoup:1.10.2'
+
+    lottie = 'com.airbnb.android:lottie:2.1.0'
+    picasso = "com.squareup.picasso:picasso:2.5.2"
+
+    espresso = "com.android.support.test.espresso:espresso-core:$ver_espresso"
+    awaitility = "org.awaitility:awaitility:3.0.0"
+    mockito_android = "org.mockito:mockito-android:$ver_mockito"
+    mockito_inline = "org.mockito:mockito-inline:$ver_mockito"
+}
