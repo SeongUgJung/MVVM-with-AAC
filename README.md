@@ -1,5 +1,4 @@
 # LottieFiles-Android
----
 
 I made this repository for example of Android Architecture Component with Kotlin
 
@@ -8,7 +7,6 @@ This repository is **unofficial** and **experimental**.
 It might be able to maintain very short term.  
 
 # What it is
----
 
 Lottie files data is from [Lottiefiles.com](http://www.lottiefiles.com/)
 
@@ -16,7 +14,7 @@ This source is used Dagger, Databinding, Room, ViewModel, LiveData and MVVM base
 
 
 # License
----
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
