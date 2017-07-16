@@ -10,7 +10,7 @@ It might be able to maintain very short term.
 
 Lottie files data is from [Lottiefiles.com](http://www.lottiefiles.com/)
 
-This source is used Dagger, Databinding, Room, ViewModel, LiveData and MVVM based.
+This source is using Dagger, Databinding, Room, ViewModel, LiveData and MVVM based.
 
 
 # License
