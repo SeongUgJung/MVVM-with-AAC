@@ -6,7 +6,7 @@ ext {
     ver_dagger2 = "2.10"
     ver_butterknife = "8.5.1"
     ver_stetho = "1.4.2"
-    ver_kotlin = '1.1.3'
+    ver_kotlin = '1.1.3-2'
     ver_stag = '2.0.2'
     ver_autovalue = "1.3"
     ver_autovalue_gson = "0.4.6"
