@@ -58,7 +58,7 @@ ext {
 
     jsoup = 'org.jsoup:jsoup:1.10.2'
 
-    lottie = 'com.airbnb.android:lottie:2.1.0'
+    lottie = 'com.airbnb.android:lottie:2.1.2'
     picasso = "com.squareup.picasso:picasso:2.5.2"
 
     espresso = "com.android.support.test.espresso:espresso-core:$ver_espresso"
