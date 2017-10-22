@@ -12,7 +12,6 @@ object FlowableForLifecycle {
     fun <T> flowableForLifecycle(lifecycleOwner: LifecycleOwner, data: Flowable<T>, atLeast: Lifecycle.State = Lifecycle.State.RESUMED): Flowable<T> {
         return Flowable.combineLatest(Flowable.create<Lifecycle.State>({ e ->
             val observer: GenericLifecycleObserver = object : GenericLifecycleObserver {
-                override fun getReceiver(): Any = lifecycleOwner
 
                 override fun onStateChanged(owner: LifecycleOwner, event: Lifecycle.Event) {
                     e.takeIf { !e.isCancelled }?.onNext(owner.lifecycle.currentState)

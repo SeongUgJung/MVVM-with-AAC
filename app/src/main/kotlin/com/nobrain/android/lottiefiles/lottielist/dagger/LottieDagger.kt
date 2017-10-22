@@ -23,7 +23,7 @@ class LottieListModule(private val lottieListActivity: LottieListActivity) {
     @Named("LottieListViewModel")
     @Provides fun viewModelProvider(lottieModel: LottieModel): ViewModelProvider =
         ViewModelProviders.of(lottieListActivity, object : ViewModelProvider.Factory {
-            override fun <T : ViewModel?> create(modelClass: Class<T>?): T {
+            override fun <T : ViewModel?> create(modelClass: Class<T>): T {
                 return LottieListViewModel(lottieModel, lottieListActivity) as T
             }
         })

@@ -4,6 +4,7 @@ buildscript {
     apply from: "dependecies-variable.gradle"
     repositories {
         jcenter()
+        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2'}
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$ver_android_build_tool"
@@ -16,6 +17,7 @@ allprojects {
     repositories {
         jcenter()
         maven { url 'https://maven.google.com' }
+        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2'}
     }
 }
 
