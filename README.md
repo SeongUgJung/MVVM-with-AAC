@@ -12,6 +12,11 @@ Lottie files data is from [Lottiefiles.com](http://www.lottiefiles.com/)
 
 This source is using Dagger, Databinding, Room, ViewModel, LiveData and MVVM based.
 
+# Slides
+
+[Slide - EN](https://goo.gl/WdEotL)
+[Slide - KR](https://www.slideshare.net/ssuser70b5b8/android-architecture-component-on-kotlin)
+
 
 # License
 
