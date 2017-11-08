@@ -15,6 +15,7 @@ This source is using Dagger, Databinding, Room, ViewModel, LiveData and MVVM bas
 # Slides
 
 [Slide - EN](https://goo.gl/WdEotL)
+
 [Slide - KR](https://www.slideshare.net/ssuser70b5b8/android-architecture-component-on-kotlin)
 
 
